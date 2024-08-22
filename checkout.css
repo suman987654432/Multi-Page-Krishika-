@@ -1,0 +1,345 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  color: red;
+  background: yellow;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  height: 55vh;
+  background: url("/image/hero.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      color: #333;
+      margin-left: 30px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin-left: 20px;
+
+      li a {
+        text-decoration: none;
+        color: #009444;
+        padding: 10px 15px;
+        margin-left: 20px;
+
+        &:hover {
+          border-bottom: 3px solid green;
+        }
+      }
+    }
+
+    button {
+      background-color: #009444;
+      color: white;
+      border: 2px solid transparent;
+      padding: 10px 30px;
+      border-radius: 20px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: white;
+        color: #009444;
+        border-color: #009444;
+      }
+    }
+
+    .cart-icon {
+      height: 30px;
+    }
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-left: 100px;
+
+    h3 {
+      font-size: 50px;
+      font-weight: 700;
+      color: white;
+    }
+
+    p {
+      color: rgb(227, 240, 239);
+      letter-spacing: 0.025em;
+      font-weight: 200;
+      font-size: 1.5rem;
+    }
+  }
+
+  .hero-buttons {
+    display: flex;
+    align-items: center;
+
+    button {
+      background-color: #009444;
+      border-style: none;
+      border-top-right-radius: 1.5rem;
+      border-bottom-right-radius: 1.5rem;
+      border-bottom-left-radius: 1.5rem;
+      height: 70px;
+      font-size: 24px;
+      width: 250px;
+      margin-top: 40px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: white;
+        color: #009444;
+        border-color: #009444;
+      }
+    }
+
+    .sub {
+      margin-left: 30px;
+    }
+  }
+}
+
+.get-started {
+  background-color: #009444;
+  color: white;
+  border: 2px solid transparent;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: white;
+    color: #009444;
+    border-color: #009444;
+  }
+}
+
+.img img {
+  height: 30px;
+
+  &:hover {
+    background-color: rgb(255, 255, 255);
+    color: #009444;
+    border: 2px solid;
+  }
+}
+
+.hero-content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.hero-content p {
+    color: rgb(227, 240, 239);
+    letter-spacing: 0.025em;
+    font-weight: 200;
+    font-size: 1.5rem;
+} *
+
+.checkout {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    margin-top: 70px;
+}
+
+.billing-details, .additional-info, .order-summary, .place-order {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #228B22;
+}
+
+form label, .additional-info label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form select, .additional-info textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form span {
+    color: red;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+table td strong {
+    font-weight: bold;
+}
+
+.place-order p {
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+}
+
+.place-order button {
+    background-color: #228B22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 300px;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+    color: #009444;
+    border: 2px solid;
+}
+
+
+.footer {
+    background-color: #2f4f2f;
+    color: white;
+    padding: 40px 0;
+    margin-top: 70px;
+  
+    .foot {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  
+      > div {
+        flex: 1;
+        margin: 10px;
+      }
+  
+      h3 {
+        font-size: 20px;
+        margin-top: 20px;
+      }
+  
+      p,
+      a {
+        margin: 5px 0;
+        font-size: 20px;
+        padding-top: 1.25rem;
+        color: white;
+        text-decoration: none;
+      }
+  
+      .subscribe {
+        display: flex;
+        flex-direction: column;
+  
+        input[type="email"] {
+          padding: 17px;
+          margin-bottom: 10px;
+          border: none;
+          border-radius: 5px;
+        }
+  
+        h3 {
+          font-size: 20px;
+        }
+  
+        .btn {
+          background-color: #28a745;
+          color: white;
+          padding: 10px 20px;
+          text-decoration: none;
+          border-radius: 5px;
+          font-size: 16px;
+          text-align: center;
+          font-family: Georgia, "Times New Roman", Times, serif;
+  
+          &:hover {
+            background-color: white;
+            color: #009444;
+            border: 2px solid #009444;
+          }
+        }
+      }
+  
+      .social a {
+        display: inline-block;
+        margin: 0 5px;
+        margin-top: 20px;
+  
+        img {
+          width: 50px;
+          height: 50px;
+          margin: 10px;
+        }
+      }
+  
+      .latest-post {
+        p {
+          margin: 0;
+          display: flex;
+          align-items: center;
+  
+          img {
+            width: 150px;
+            height: 100px;
+            margin-right: 40px;
+            margin: 10px;
+          }
+  
+          a {
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  
+    .copyright {
+      text-align: center;
+      margin-top: 0px;
+    }
+  }

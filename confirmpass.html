@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="confirmpass.css" />
+    <title>Reset Password</title>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="navbar">
+        <img src="/image/logo.svg" alt="" />
+        <h1>Krishika</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="news.html">News & Articles</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html">
+          <div class="img"><img src="/image/cart.png" alt="" /></div
+        ></a>
+        <a href="login.html"><button>Log In</button></a>
+        <button class="get-started">Get started</button>
+      </div>
+    </div>
+    <div class="wrapper">
+      <form action="#">
+        <h2>Reset Password</h2>
+        <div class="input-field">
+          <input type="password" id="new-password" required />
+          <label>Enter new password</label>
+          <p class="password-requirements">Password must be at least 8 characters long, contain a capital letter and a special character.</p>
+        </div>
+        <div class="input-field">
+          <input type="password" id="confirm-password" required />
+          <label>Confirm new password</label>
+        </div>
+        <a href="index.html" class="button-link"
+          ><button type="button" onclick="validatePassword()">Submit</button></a
+        >
+        <div class="login">
+          <p>Remembered? <a href="login.html">Login</a></p>
+        </div>
+      </form>
+    </div>
+    <script src="reset-password.js"></script>
+  </body>
+</html>
